@@ -45,7 +45,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 1158px;
-  padding: auto, 12px;
+  padding: auto 12px;
 }
 
 .list {
@@ -72,6 +72,17 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.item-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section-title {
+  margin: 0 auto 72px auto;
+  text-align: center;
 }
 
 body {
@@ -132,9 +143,11 @@ body {
   height: 600px;
 }
 
-.hero.container {
-  height: 600px;
+.hero-container {
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
+
 .hero-title {
   margin-top: 0;
   margin-bottom: 48px;
@@ -149,6 +162,8 @@ body {
 }
 
 .hero-button {
+  display: block;
+  margin: 0 auto;
   text-align: center;
   width: 169px;
   height: 56px;
@@ -163,11 +178,23 @@ body {
 }
 
 /* --------------- ADVANTAGES --------------- */
+.section-adventages {
+  padding: 120px 0;
+}
+.section-adventages-item {
+  display: inline-block;
+  width: 264px;
+}
+.section-adventages-list {
+  text-align: center;
+}
 .section-adventages-item-title {
   color: var(--main-page-section-title-color);
 }
 
 /* --------------- PROJECTS --------------- */
+
+
 .section-projects-title {
   font-weight: 700;
   font-size: 36px;
@@ -182,6 +209,8 @@ body {
 
 .section-team-item {
   background-color: var(--team-item-bgr-color);
+  display: inline-block;
+  width: 360;
 }
 
 .section-team-title {
