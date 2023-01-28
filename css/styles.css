@@ -1,0 +1,203 @@
+:root {
+  --main-bgr-color: #ffffff;
+  --main-text-color: #434455;
+  --main-page-section-title-color: #2e2f42;
+
+  --logo-main-color: #4d5ae5;
+  --header-logo-studio-color: #2e2f42;
+  --header-link-color: #434455;
+  --header-link-hover-focus-color: #4d5ae5;
+
+  --hero-bgr-color: #2e2f42;
+  --hero-title-color: #ffffff;
+  --hero-btn-content-color: #ffffff;
+  --hero-btn-bgr-color: #4d5ae5;
+  --hero-btn-bgr-color-hover-focus: #404bbf;
+
+  --item-title-color: #2e2f42;
+
+  --section-team-bgr-color: #f4f4fd;
+  --team-item-bgr-color: #ffffff;
+
+  --footer-bgr-color: #2e2f42;
+  --footer-logo-studio-color: #f4f4fd;
+  --footer-subtitle-color: #e7e9fc;
+
+  --portfolio-btn-bgr-color-hover-focus: #404bbf;
+  --portfolio-btn-content-color: #4d5ae5;
+  --portfolio-btn-content-color-hover-focus: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.button {
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+body {
+  background-color: var(--main-bgr-color);
+  color: var(--main-text-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* --------------- HEADER --------------- */
+.header {
+  border-bottom: 1px solid var(--footer-subtitle-color);
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  color: var(--logo-main-color);
+}
+
+.header-logo-studio {
+  color: var(--header-logo-studio-color);
+}
+
+.footer-logo-studio {
+  color: var(--footer-logo-studio-color);
+}
+
+.header-link {
+  font-weight: 500;
+  color: var(--header-link-color);
+}
+
+.header-link:hover,
+.header:link:focus {
+  color: var(--header-link-hover-focus-color);
+}
+
+.header-address-link {
+  font-style: normal;
+  color: var(--header-link-color);
+}
+
+.header-address-link:hover,
+.header-address-link:focus {
+  color: var(--header-link-hover-focus-color);
+}
+
+/* --------------- HERO --------------- */
+.hero {
+  background: var(--hero-bgr-color);
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--hero-title-color);
+}
+
+.hero-button {
+  padding: 16px 32px;
+  border: 0;
+  background: var(--hero-btn-bgr-color);
+  color: var(--hero-btn-content-color);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background: var(--hero-btn-bgr-color-hover-focus);
+}
+
+/* --------------- ADVANTAGES --------------- */
+.section-adventages-item-title {
+  color: var(--main-page-section-title-color);
+}
+
+/* --------------- PROJECTS --------------- */
+.section-projects-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  color: var(--main-page-section-title-color);
+}
+
+/* --------------- TEAM --------------- */
+.section-team {
+  background-color: var(--section-team-bgr-color);
+}
+
+.section-team-item {
+  background-color: var(--team-item-bgr-color);
+}
+
+.section-team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  color: var(--main-page-section-title-color);
+}
+
+.section-team-item-title {
+  color: var(--item-title-color);
+}
+
+/* --------------- FOOTER --------------- */
+.footer {
+  background: var(--footer-bgr-color);
+}
+
+.footer-text {
+  color: var(--footer-subtitle-color);
+}
+
+/* --------------- PORTFOLIO --------------- */
+
+.portfolio-button {
+  background: var(--team-bgr-logo-footer-studio-);
+  border: 1px solid var(--footer-subtitle-color);
+  padding: 12px 24px;
+  color: var(--portfolio-btn-content-color);
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background: var(--portfolio-btn-bgr-color-hover-focus);
+  color: var(--portfolio-btn-content-color-hover-focus);
+}
+
+.portfolio-cards-item-title {
+  color: var(--item-title-color);
+}
