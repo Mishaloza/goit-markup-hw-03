@@ -23,6 +23,8 @@
   --footer-logo-studio-color: #f4f4fd;
   --footer-subtitle-color: #e7e9fc;
 
+  --portfolio-btn-bgr-color-normal: #f4f4fd;
+  --portfolio-btn-border: #e7e9fc;
   --portfolio-btn-bgr-color-hover-focus: #404bbf;
   --portfolio-btn-content-color: #4d5ae5;
   --portfolio-btn-content-color-hover-focus: #ffffff;
@@ -45,13 +47,15 @@
   margin-left: auto;
   margin-right: auto;
   width: 1158px;
-  padding: auto 12px;
+  padding: 0 15px;
 }
 
 .list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .link {
@@ -66,6 +70,9 @@
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0.04em;
+}
+.item {
+  display: inline-block;
 }
 
 .item-title {
@@ -97,9 +104,23 @@ body {
 /* --------------- HEADER --------------- */
 .header {
   border-bottom: 1px solid var(--footer-subtitle-color);
+  height: 72px;
+  padding: 24px 0;
+}
+.header-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
+  margin: 0 76px 0 0;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -117,6 +138,9 @@ body {
   color: var(--footer-logo-studio-color);
 }
 
+.header-list {
+  width: 261px;
+}
 .header-link {
   font-weight: 500;
   color: var(--header-link-color);
@@ -135,6 +159,9 @@ body {
 .header-address-link:hover,
 .header-address-link:focus {
   color: var(--header-link-hover-focus-color);
+}
+.tel {
+  margin-left: 40px;
 }
 
 /* --------------- HERO --------------- */
@@ -155,6 +182,7 @@ body {
   margin-right: auto;
   width: 494px;
   height: 120px;
+  text-align: center;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.1;
@@ -179,22 +207,21 @@ body {
 
 /* --------------- ADVANTAGES --------------- */
 .section-adventages {
-  padding: 120px 0;
+  padding: 120px 15px;
 }
 .section-adventages-item {
-  display: inline-block;
   width: 264px;
 }
 .section-adventages-list {
-  text-align: center;
 }
 .section-adventages-item-title {
   color: var(--main-page-section-title-color);
 }
 
 /* --------------- PROJECTS --------------- */
-
-
+.section-projects {
+  margin-bottom: 120px;
+}
 .section-projects-title {
   font-weight: 700;
   font-size: 36px;
@@ -205,11 +232,12 @@ body {
 /* --------------- TEAM --------------- */
 .section-team {
   background-color: var(--section-team-bgr-color);
+  padding-bottom: 120px;
+  text-align: center;
 }
 
 .section-team-item {
   background-color: var(--team-item-bgr-color);
-  display: inline-block;
   width: 360;
 }
 
@@ -227,24 +255,49 @@ body {
 /* --------------- FOOTER --------------- */
 .footer {
   background: var(--footer-bgr-color);
+  height: 310px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-text {
   color: var(--footer-subtitle-color);
+  margin: 0;
+  width: 264px;
 }
 
 /* --------------- PORTFOLIO --------------- */
+.portfolio-buttons-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.portfolio-buttons-item {
+  margin-right: 24px;
+}
+
+.portfolio-buttons-item:last-child {
+  margin-right: 0;
+}
 
 .portfolio-button {
-  background: var(--team-bgr-logo-footer-studio-);
-  border: 1px solid var(--footer-subtitle-color);
+  background-color: var(--portfolio-btn-bgr-color-normal);
+  border: 1px solid var(--portfolio-btn-border);
   padding: 12px 24px;
   color: var(--portfolio-btn-content-color);
 }
+
 .portfolio-button:hover,
 .portfolio-button:focus {
-  background: var(--portfolio-btn-bgr-color-hover-focus);
+  background-color: var(--portfolio-btn-bgr-color-hover-focus);
   color: var(--portfolio-btn-content-color-hover-focus);
+}
+
+.portfolio-cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .portfolio-cards-item-title {
