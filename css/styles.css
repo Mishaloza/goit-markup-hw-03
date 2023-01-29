@@ -28,6 +28,7 @@
   --portfolio-btn-bgr-color-hover-focus: #404bbf;
   --portfolio-btn-content-color: #4d5ae5;
   --portfolio-btn-content-color-hover-focus: #ffffff;
+  --portfolio-cards-border-color: #e7e9fc;
 }
 
 .visually-hidden {
@@ -306,6 +307,20 @@ body {
   justify-content: space-between;
 }
 
+.portfolio-cards-item {
+  margin-bottom: 48px;
+}
+
+.portfolio-cards-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
 .portfolio-cards-item-title {
   color: var(--item-title-color);
+}
+
+.cards-content-container {
+  border: 1px solid var(--portfolio-cards-border-color);
+  border-top: none;
+  padding: 32px 16px;
 }
