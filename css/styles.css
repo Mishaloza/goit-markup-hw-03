@@ -303,11 +303,15 @@ body {
 .portfolio-cards-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .portfolio-cards-item {
   margin-bottom: 48px;
+  margin-right: 24px;
+}
+
+.portfolio-cards-item:nth-child(1n + 3) {
+  margin-right: 0;
 }
 
 .portfolio-cards-item:nth-last-child(-n + 3) {
