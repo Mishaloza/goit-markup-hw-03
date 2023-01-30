@@ -271,10 +271,6 @@ body {
   color: var(--item-title-color);
 }
 
-/* --------------- CUSTOMERS ------------ */
-/* .costumer-item-box {
-} */
-
 /* --------------- FOOTER --------------- */
 .footer {
   background: var(--footer-bgr-color);
