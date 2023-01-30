@@ -213,15 +213,14 @@ body {
 .section-adventages-item {
   width: 264px;
 }
-.section-adventages-list {
-}
+
 .section-adventages-item-title {
   color: var(--main-page-section-title-color);
 }
 
 /* --------------- PROJECTS --------------- */
 .section-projects {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 .section-projects-title {
   font-weight: 700;
